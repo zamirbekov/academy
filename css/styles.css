@@ -1,0 +1,46 @@
+@import "compass/css3";
+
+.calculate {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  padding: 5px;
+  margin: 5px;  
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+
+  justify-content: flex-end; 
+  align-items: flex-end;
+}
+
+.key {
+  background: blue;
+  padding: 5px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+
+}
+
+.screen {
+  width: 400px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  background:white;
+}
+
+.main {
+  border-style: solid;
+  width: 450px;
+  height: 600px;
+  padding: 5px;
+  margin: 5px;
+  background:brown;
+}
