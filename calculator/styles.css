@@ -1,11 +1,15 @@
 @import "compass/css3";
 
+body {
+    background-image: url(6.jpg); /* Путь к фоновому изображению */
+     background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+   }
+
 .calculate {
-  position: absolute;
-  width: 400px;
-  height: 500px;
-  padding: 5px;
-  margin: 5px;  
+  width: 320px;
+  height: 400px;
   
   display: flex;
   flex-direction: row;
@@ -13,34 +17,67 @@
 
   justify-content: flex-end; 
   align-items: flex-end;
-}
+  align-content: center;
+ }
 
 .key {
-  background: blue;
+  background:#000;
+  color:#fff;
   padding: 5px;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   margin: 5px;
-
-  color: black;
-  font-weight: bold;
-  font-size: 2em;
+  border-radius: 8px;
+  font-size: 1.5em;
+  cursor:pointer;
+  outline:none;
+  box-shadow: inset 5px 5px 5px #555;
 
 }
 
-.screen {
-  width: 400px;
-  height: 50px;
-  padding: 5px;
-  margin: 5px;
-  background:white;
+.key:active {
+    background:#000;
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: inset 5px 5px 5px #555;
 }
 
 .main {
   border-style: solid;
-  width: 450px;
-  height: 600px;
-  padding: 5px;
+  width: 320px;
+  height: 490px;
+  padding: 15px;
   margin: 5px;
-  background:brown;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(top, black, white);
+  margin: auto;
+  background-image: url(5.jpg); /* Путь к фоновому изображению */
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center; 
 }
+
+#display{
+  height: 50px;
+  border-radius: 4px;
+  width: 300px !important;
+  padding: 5px;
+  margin-bottom: 20px;
+  display:block;
+  font-family: sans-serif;
+  text-align: right;
+  border:2px;
+  background:#3b3535;
+  color:#fff;
+  font-size:20px;
+  outline: none;
+  overflow: hidden;
+  letter-spacing: 4px;
+}
+
+.result {
+  width: 150px;
+}
+
