@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+ <title>JS </title>
+  </head>
+  <body>
+<h1 id="hello"></h1>
+   </body>
+
+
+<!-- С помощью JS можно создавать классы через функцию, и не только get а еще и set -->
+<script type="text/javascript">
+   	function Person(first, last, age){
+	this.firstName = first;
+	this.lastName = last;
+	this.age = age;
+	this.nationality = 'americano'
+	this.name = function(){
+	return this.firstName+" "+this.lastName
+}
+}
+
+var trump = new Person("Donald", "Trupm", 60)
+var putin = new Person("Vladimir", "Putin", 65)
+
+document.getElementById("hello").innerHTML="Presidents "+trump.lastName+putin.lastName+"<br>"+trump.nationality+"<br>"+putin.name()
+</script>
+</html>

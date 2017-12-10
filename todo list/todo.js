@@ -5,23 +5,23 @@ var block = document.getElementById("block")
 
 function add_new(){	
 	var li = document.createElement('LI')
-	var btn = document.createElement('BUTTON')
-	var newCheckBox = document.createElement('input');
-	newCheckBox.type = 'checkbox';
-	newCheckBox.checked = false;
+	var btn = document.createElement('SPAN')
+	var check = document.createElement('input');
+	check.type = 'checkbox';
+	check.checked = false;
 	var firstLi = list.getElementsByTagName('LI')[0]
 	li.innerHTML = new_task.value
-	btn.innerHTML = "Удалить"
+	btn.innerHTML = "X"
 	list.insertBefore(li, firstLi)
-	list.insertBefore(btn, firstLi)
-	list.insertBefore(newCheckBox, firstLi)
+	li.appendChild(btn)
+	li.appendChild(check)
 	new_task.value = ""
 	btn.onclick = function(){
 		list.removeChild(li, firstLi)
 		this.parentNode.removeChild(btn)
-		newCheckBox.parentNode.removeChild(newCheckBox)
+		check.parentNode.removeChild(check)
 	}
-	newCheckBox.onclick = function(){
+	check.onclick = function(){
 		if (this.checked == true){
     	li.setAttribute("class", "checked");}
     	else if (this.checked ==false){

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Model of cars</title>
+	<link rel="stylesheet" type="text/css" href="callback.css">
+	<script src="jquery.3.2.1.min.js"></script>
+</head>
+
+<body>
+	<!-- <button id="b" >Click</button>
+	<p>Hello</p> -->
+<div class="flex-container">
+	<div>
+	<input id="mark" class="form-control flex-item1" placeholder="№" value="">
+
+
+	<input id="model" class="form-control flex-item2" placeholder="Имя игрока" value="">
+	
+	<input id="year" class="form-control flex-item3" placeholder="Возраст" value="">
+
+	<input id="color" class="form-control flex-item4" placeholder="Сборная" value="">
+	<label>Позиция
+		<select id="sel" class="form-control">
+			<option value="Вратарь">Вратарь</option>
+			<option value="Защитник">Защитник</option>
+			<option value="Полузащитник">Полузащитник</option>
+			<option value="Нападающий">Нападающий</option>
+		</select>
+</label>
+
+	<button id="b" onclick="" class="btn btn-success">+</button>
+</div>
+     <table id="table" class="table table-hover">
+     <thead>
+     	<th>№</th>
+     	<th>Имя игрока</th>
+     	<th>Возраст</th>
+     	<th>Сборная</th>
+     	<th>Позиция</th>
+     </thead>
+     <tbody id="tb">
+
+
+     	
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Информация о игроке</h4>
+      </div>
+      <div class="modal-body">
+      	<div id="md-inp">
+      		<input id="mrk" type="" name="">
+      		<input id="mdl" type="" name="">
+      		<input id="yr" type="" name="">
+      		<input id="clr" type="" name="">
+      		<select id="krb">
+				<option value="Вратарь">Вратарь</option>
+				<option value="Защитник">Защитник</option>
+					<option value="Полузащитник">Полузащитник</option>
+				<option value="Нападающий">Нападающий</option>
+		</select>
+</label>
+      	</div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отменить </button>
+        <button type="button" id="save" class="btn btn-primary" data-dismiss="modal">Изменить</button>
+      </div>
+    </div>
+  </div>
+</div>
+     </tbody>
+ </table>
+
+
+
+ <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <ul id="showul"></ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="showlol" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+	<script src="callback.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
