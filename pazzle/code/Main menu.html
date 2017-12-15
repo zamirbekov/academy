@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+
+    <title>Kyrgyzland</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="Main menu.css" rel="stylesheet">
+	</head>
+    	<body> 
+			<div class="col-xs-12" align="center">
+					<h1 >Добро пожаловать</h1>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kyrgyzstan_stub.svg/2000px-Kyrgyzstan_stub.svg.png" width="300" height="150">
+					<h1> в KYRGYZLAND!</h1>
+					<h2 >Поехали дальше?</h2>
+					<button align="center" onclick="Next()">Поехали!</button>
+					    <script> 
+					    	function Next() { 
+					    		window.location.href="file:///C:/Users/User/Desktop/IB/COMP/IA/Source%20files/select_level.html"
+					    	}
+    					</script>
+    				<button  align="center" onclick="Exit()">В другой раз</button>
+					    <script> 
+					    	var opened_win;
+					    	function opened_win() {
+					    		opened_win = window.open('file:///C:/Users/User/Desktop/IB/COMP/IA/Source%20files/Main%20menu.html', '_self')
+					    	}
+					    	function Exit() { 
+					    		opened_win.close()
+					    	}
+    					</script>
+
+			</div>
+
+
+    	</body>

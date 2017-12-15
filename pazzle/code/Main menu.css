@@ -1,0 +1,17 @@
+html {
+	height: 100%;
+    background: -webkit-linear-gradient(#FF512F, #F09819);
+	background-repeat: no-repeat;
+}
+h1, h2{
+	color: #D31027 ;
+	font-family: "late";
+    font-size: 500%;
+}
+button{
+    background-color: #FF512F;
+    width: 150px;
+    height: 50px;
+    font-size: 15pt;
+    font-style: "late";
+}

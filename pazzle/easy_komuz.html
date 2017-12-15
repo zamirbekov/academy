@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Easy komuz</title>
+ <BASE HREF="http://www.softholm.com/igra/pict/">
+
+</head>
+<body   topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" >
+<TT>
+<CENTER><BR><BR>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 ALIGN="center">
+<TR>
+  <TD><IMG SRC="s0.jpg" NAME="img0" onClick="Move(0)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s1.jpg" NAME="img1" onClick="Move(1)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s2.jpg" NAME="img2" onClick="Move(2)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s3.jpg" NAME="img3" onClick="Move(3)" WIDTH=81 HEIGHT=81></TD>
+</TR>
+<TR>
+  <TD><IMG SRC="s4.jpg" NAME="img4" onClick="Move(4)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s5.jpg" NAME="img5" onClick="Move(5)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s6.jpg" NAME="img6" onClick="Move(6)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s7.jpg" NAME="img7" onClick="Move(7)" WIDTH=81 HEIGHT=81></TD>
+</TR>
+<TR>
+  <TD><IMG SRC="s8.jpg" NAME="img8" onClick="Move(8)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s9.jpg" NAME="img9" onClick="Move(9)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s10.jpg" NAME="img10" onClick="Move(10)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s11.jpg" NAME="img11" onClick="Move(11)" WIDTH=81 HEIGHT=81></TD>
+</TR>
+<TR>
+  <TD><IMG SRC="s12.jpg" NAME="img12" onClick="Move(12)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s13.jpg" NAME="img13" onClick="Move(13)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s14.jpg" NAME="img14" onClick="Move(14)" WIDTH=81 HEIGHT=81></TD>
+  <TD><IMG SRC="s15.jpg" NAME="img15" onClick="Move(15)" WIDTH=81 HEIGHT=81></TD>
+</TR>
+</TABLE>
+<CENTER>
+<BR>
+<button onclick="Pervert()">Перемешать</button>
+</CENTER>
+</TT>
+</td></tr></table> 
+
+<script type="text/javascript">
+  
+cellImage = new Array(16);
+cell = new Array(16);
+
+for (i=0; i<16; i++) {
+  cellImage[i] = new Image(81,81);
+  cellImage[i].src = "s"+i+".jpg";
+  cell[i] = 1;
+}
+
+cell[0] = 0;
+
+TempImage = new Image(81,81);
+
+function Release(who) {
+  if (who == 0) document.img0.src = cellImage[0].src;
+  if (who == 1) document.img1.src = cellImage[1].src;
+  if (who == 2) document.img2.src = cellImage[2].src;
+  if (who == 3) document.img3.src = cellImage[3].src;
+  if (who == 4) document.img4.src = cellImage[4].src;
+  if (who == 5) document.img5.src = cellImage[5].src;
+  if (who == 6) document.img6.src = cellImage[6].src;
+  if (who == 7) document.img7.src = cellImage[7].src;
+  if (who == 8) document.img8.src = cellImage[8].src;
+  if (who == 9) document.img9.src = cellImage[9].src;
+  if (who == 10) document.img10.src = cellImage[10].src;
+  if (who == 11) document.img11.src = cellImage[11].src;
+  if (who == 12) document.img12.src = cellImage[12].src;
+  if (who == 13) document.img13.src = cellImage[13].src;
+  if (who == 14) document.img14.src = cellImage[14].src;
+  if (who == 15) document.img15.src = cellImage[15].src;
+}
+
+function Pervert() {
+  for (i=0; i<2; i++) {
+    k = Math.random()*16; //0-15 
+    Move(Math.round(k)); 
+    alert(Math.round(k))
+}
+}
+
+function SwapImage(num1,num2) {
+  TempImage.src = cellImage[num2].src;
+  cellImage[num2].src = cellImage[num1].src;
+  cellImage[num1].src = TempImage.src;
+  Release(num1);
+  Release(num2);
+}
+
+function Move(value) {
+  if (cell[value] > 0) {
+    if (value!=3 && value!=7 && value!=11 && value!=15 && cell[value+1]==0) {
+      cell[value] = 0;
+      cell[value+1] = 1;
+      SwapImage(value,value+1);
+    }
+    if (value!=12 && value!=13 && value!=14 && value!=15 && cell[value+4]==0) {
+      cell[value] = 0;
+      cell[value+4] = 1;
+      SwapImage(value,value+4);
+    }
+    if (value!=0 && value!=4 && value!=8 && value!=12 && cell[value-1]==0) {
+      cell[value] = 0;
+      cell[value-1] = 1;
+      SwapImage(value,value-1);
+    }
+    if (value!=0 && value!=1 && value!=2 && value!=3 && cell[value-4]==0) {
+      cell[value] = 0;
+      cell[value-4] = 1;
+      SwapImage(value,value-4);
+    }
+  }
+}
+
+</script>
+</body>
+</html>

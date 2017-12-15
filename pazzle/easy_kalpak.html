@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <head>
+    <meta charset="utf-8">
+
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="easy_all.css" rel="stylesheet">
+    <h1 align="center" >KALPAK</h1>
+    </head> 
+<script type="text/javascript">
+                                        function shuffle_the_FisherYatesway(array) {
+                                          var currentIndex = array.length, temporaryValue, randomIndex ;
+
+                                              while (0 !== currentIndex) {
+
+                                                randomIndex = Math.floor(Math.random() * currentIndex);
+                                                currentIndex -= 1;
+
+                                                temporaryValue = array[currentIndex];
+                                                array[currentIndex] = array[randomIndex];
+                                                array[randomIndex] = temporaryValue;
+                                          
+                                                return array;
+
+                                                function image_change(a)  {
+                                                   for(var array[a]; a = 0;a<images.length;i++)
+                                                            document.getElementById("img").src=src="images/large/' + images[a] + '.jpg";
+
+                                                var images = ['kalpak1.jpg', 'kalpak2.jpg', 'kalpak3.jpg', 'kalpak4.jpg', 'kalpak5.jpg', 'kalpak6.jpg', 'kalpak7.jpg','kalpak8.jpg','kalpak9.jpg'];
+                                                shuffle_the_FisherYatesway(array);
+
+
+    
+</script>
+<body> 
+    <div class="container">
+                <div class="col-xs-6">
+                            <div >
+                                <img class="front 1 row no-gutter" src="kalpak1.jpg" class="col-xs-3">
+                                <img class="back 1 row no-gutter" onclick="block_number(1);" src="kalpak1.jpg" class="col-xs-3">
+                                <img class="front 2 row no-gutter" src="kalpak2.jpg" class="col-xs-3">
+                                <img class="back 2 row no-gutter" onclick="block_number(2);" src="kalpak2.jpg" class="col-xs-3">
+                                <img class="front 3 row no-gutter" src="kalpak3.jpg" class="col-xs-3">
+                                <img class="back 3 row no-gutter" onclick="block_number(3);" src="kalpak3.jpg" class="col-xs-3">
+                                <img class="front 4 row no-gutter" src="kalpak4.jpg" class="col-xs-3">
+                                <img class="back 4 row no-gutter" onclick="block_number(4);" src="kalpak4.jpg" class="col-xs-3">
+                                <img class="front 5 row no-gutter" src="kalpak5.jpg" class="col-xs-3">
+                                <img class="back 5 row no-gutter" onclick="block_number(5);" src="kalpak5.jpg" class="col-xs-3">
+                                <img class="front 6 row no-gutter" src="kalpak6.jpg" class="col-xs-3">
+                                <img class="back 6 row no-gutter" onclick="block_number(6);" src="kalpak6.jpg" class="col-xs-3">
+                                <img class="front 7 row no-gutter" src="kalpak7.jpg" class="col-xs-3">
+                                <img class="back 7 row no-gutter" onclick="block_number(7);" src="kalpak7.jpg" class="col-xs-3">
+                                <img class="front 8 row no-gutter" src="kalpak8.jpg" class="col-xs-3">
+                                <img class="back 8 row no-gutter" onclick="block_number(8);" src="kalpak8.jpg" class="col-xs-3">
+                                <img class="front 9 row no-gutter" src="kalpak9.jpg" class="col-xs-3">
+                                <img class="back 9 row no-gutter" onclick="block_number(9);" src="kalpak9.jpg" class="col-xs-3">
+                            </div>
+                            
+                            
+                </div>
+                <div class="col-xs-6">
+                    <p align="center">
+                    <h1> Калпак – это белая войлочная  шапка, порой с черными или красными отворотами, дополняющая традиционную  мужскую одежду, состоящую из войлочного или овчинного пальто и сапог.</h1>
+                     <button class=knopka  onclick="shuffle_the_FisherYatesway()">Начать играть</button>
+                    </p> 
+                </div>
+    </div>
+</body>
+</html>

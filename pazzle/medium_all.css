@@ -1,0 +1,16 @@
+html {
+	margin-top:0px;
+    background: -webkit-linear-gradient(#00bf8f, #001510);
+	background-repeat: no-repeat;
+	height:100%;
+}
+h1 {
+	color: #000000:; 
+	size: 5;
+	margin-top:50px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}

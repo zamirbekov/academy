@@ -1,0 +1,22 @@
+.gallery figure img {
+	margin-top:50px;
+	height: 240px;
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+html, h2{
+	height: 100%;
+    background: -webkit-linear-gradient(#232526, #414345);
+	background-repeat: no-repeat;
+	color: white;
+}

@@ -1,0 +1,24 @@
+html {
+	margin-top:0px;
+    background: -webkit-linear-gradient(#232526, #414345);
+	background-repeat: no-repeat;
+	height:100%;
+}
+h1 {
+	color: #000000:; 
+	size: 5;
+	margin-top:50px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+.knopka {
+    background-color: #616161; 
+    border: 2px solid black; 
+	height: 50px;
+	width: 200px;
+}
+.back{ display: none;
+}

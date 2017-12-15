@@ -1,21 +1,158 @@
 <!DOCTYPE html>
+<html>
+<title>Library</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body class="w3-content" style="max-width:1200px">
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>LIB</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Best sellers</a>
+    <a href="#" class="w3-bar-item w3-button">Books</a>
+   
+  </div>
+    <i class="fa fa-shopping-cart w3-margin-right" id="buy" style="font-size: 25px;"></i>
+    <div id="modal_form">
+      <span id="modal_close">X
+        <table border="1">
+<tr id="report">
+    <th>№</th>
+    <th>Наименование</th>
+    <th>Цена за единицу</th>
+    <th>Кол-во</th>
+   </tr>
+        </table>
+    <div id="info">
+
+    </div>
+</div>
+<div id="overlay"></div>
+ </nav>
+
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">LIB</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="w3-main" style="margin-left:250px">
+
+
+  <div class="w3-hide-large" style="margin-top:100px"></div>
+  
+
+  <header class="container w3-xlarge">
+    <p class="w3-left">Best sellers</p>
+    <p class="w3-right">
+            <i class="fa fa-search"></i>
+    </p>
+  </header>
+</div>
+  
+</div>
+  <br><br>
+  <div class="flex-main-con" style="display: flex; justify-content: flex-start; flex-flow: row wrap; align-content: space-around;">
+      <div class="everbook">
+        <img src="img/harry-potter.jpg">
+        <p>Harry Potter<br>$<b>30</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+      <div class="everbook">
+        <img src="img/da-vinci.jpg">
+        <p>The Da Vinci Code<br>$<b>24</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+ 
+      <div class="everbook">
+          <img src="img/to-kill-a-mockinbird.jpg">
+        <p>To Kill a Mockingbird<br>$<b>35</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+      <div class="everbook">
+        <img src="img/animal-farm.jpg">
+        <p>Animal Farm<br>$<b>20</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+
+      <div class="everbook">
+        <img src="img/little-prince.jpg">
+        <p>The Little Prince<br>$<b>30</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+      <div class="everbook">
+          <img src="img/1984.jpg">
+        <p>1984<br>$<b>25</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+
+      <div class="everbook">
+        <img src="img/the-lord-of-the-rings.jpg">
+        <p>The Lord of the Rings<br>$<b>13</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+      <div class="everbook">
+        <img src="img/catch.jpg">
+        <p>Catch-22<br>$<b>22</b><br>
+        <input type="text" class="w3-input">
+        <br>
+        <button type="button" class="w3-btn w3-black">Добавить</button>
+        </p>
+      </div>
+  </div>
+    
+  <div class="w3-black w3-center w3-padding-24">Books Shop</div>
+
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
-    <!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
-
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>JQuery</title>
 </head>
 <body>
-<!-- Card header -->
+
 <div class="row">
 <div class="col-sm-6">
 <div class="card">
     <div class="card-block">
         <h2 class="card-title">Банана</h2>
-        <span class="card-text">Банана от миньонов</span>
+        <span class="card-text">Банана от миньонов
         <br>
         <p>100</p>
         <input class="input-group-addoninput-group-addon">
@@ -30,7 +167,7 @@
 <div class="card">
     <div class="card-block">
         <h2 class="card-title">Ананас</h2>
-        <span class="card-text">Ананасовый экспресс</span>
+        <span class="card-text">Ананасовый экспресс
         <br>
         <p>250</p>
         <input class="input-group-addoninput-group-addon">
@@ -41,8 +178,8 @@
 </div>
     </div>
 </div>
-<div id="modal_form"><!-- Сaмo oкнo -->
-      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+<div id="modal_form">
+      <span id="modal_close">X
         <table border="1"
 <tr id="report">
     <th>№</th>
@@ -55,8 +192,8 @@
 
     </div>
 </div>
-<div id="overlay"></div><!-- Пoдлoжкa -->
+<div id="overlay"></div>
 <button id="buy">Заказать</button>
 <script type="text/javascript" src="jquery.js"></script>
 </body>
-</html>
+</html> -->
