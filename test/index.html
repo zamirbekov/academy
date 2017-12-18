@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <style>
+    .new_form{
+      background-color: yellow;
+      padding: 10px;
+      line-height: 2;
+      display: none;
+    }
+  </style>
+
+
+<div id="main_menu">
+<table style="margin: auto;">
+
+  <tr><td>
+    <div class="new_form" id="new_car_form">
+      <h1>Add car</h1>
+      <input type="text" id="new_car_name">
+      <br>
+      <select>
+        <option>Germany</option>
+        <option>Japan</option>
+        <option>USA</option>
+      </select>  
+      <br>
+      <button id="add_new_car">Add new car</button>
+    </div></td></tr>
+  <tr><td><button onclick="ShowForm()" id="new_car_button">New car form</button></td></tr>
+<ul id="list">
+  <tr><td><li>Mersedes</li></td><td>X</td><td>|</td><td>Edit</td></tr>
+  <tr><td><li>Toyota</li></td><td>X</td><td>|</td><td>Edit</td></tr>
+  <tr><td><li>Kia</li></td><td>X</td><td>|</td><td>Edit</td></tr>
+</ul>
+</table>
+
+<script type="text/javascript" src="jquery.js"></script>
+</body>
+</html>

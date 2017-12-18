@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="callback.css">
+	<script src="jquery.3.2.1.min.js"></script>
+</head>
+
+<body>
+<div id="new_car_form" style="display: none; border-style: solid;">
+   
+      <input id="car_name" class="form-control flex-item1" placeholder="Машина" value="">
+      <label>
+        <select id="country" class="form-control">
+          <option value="Германия">Германия</option>
+          <option value="Франция">Франция</option>
+          <option value="США">США</option>
+          <option value="Япония">Япония</option>
+        </select>
+    </label>
+<br>
+      <button id="b" onclick="" class="btn btn-success">Добавить</button>
+    </div>
+<button id="show_form" class="btn btn-success">Добавить</button>
+    
+
+
+
+
+
+    <div class="flex-container">
+    	
+     <table id="table" class="table table-hover">
+     <thead>
+     	<th>Машина</th>
+      <th>Страна</th>
+     </thead>
+     <tbody id="tb">
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+      </div>
+      <div class="modal-body">
+      	<div id="md-inp">
+      		<input id="carn">
+      		<select id="coun">
+				<option value="Германия">Германия</option>
+          <option value="Франция">Франция</option>
+          <option value="США">США</option>
+          <option value="Япония">Япония</option>
+		</select>
+</label>
+      	</div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отменить </button>
+        <button type="button" id="save" class="btn btn-primary" data-dismiss="modal">Изменить</button>
+      </div>
+    </div>
+  </div>
+</div>
+     </tbody>
+ </table>
+
+
+	<script src="callback.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
