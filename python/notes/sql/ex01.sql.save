@@ -1,0 +1,19 @@
+CREATE DATABASE 
+	`tests`;
+SET DEFAULT CHARSET utf8
+COLLATE utf8_general_ci;
+
+USE `test`;
+
+CREATE TABLE `users`(
+	`id` INT AUTO_INCREMENT NOT NULL,
+	`first_name` VARCHAR(20) NOT NULL,
+	`age` INT NOT NULL,
+	`bio` TEXT,
+	PRIMARY KEY(`id`)	
+) ENGINE=InnoDB;
+
+select id, first_name from `users`;
+
+INSERT INTO `users`(`first_name`, `age`)
+VALUES ("Daniyarchik", 22);
